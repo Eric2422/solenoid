@@ -4,6 +4,12 @@
 
 #include "sci_constants.h"
 
+double calculateWireLength(double length, double radius, double turns) {
+    double length = 0;
+
+    
+}
+
 /**
  * @brief Calculate the approximate effective permeability of a cylinder.
  * 
@@ -41,6 +47,26 @@ double calculateSolenoidMagneticField(double effectivePermeability, double turns
 
 int main()
 {
+    double length;
+    std::cout << "Length of solenoid(m):";
+    std::cin >> length;
+
+    double radius;
+    std::cout << "Radius of solenoid(m):";
+    std::cin >> radius;
+
+    double turns;
+    std::cout << "Number of turns:";
+    std::cin >> turns;
+    
+    double wireResisitivity;
+    std::cout << "Wire resistivity (ohms / m):";
+    std::cin >> turns;
+    
+    double wireDiameter;
+    std::cout << ":";
+    std::cin >> turns;
+    
     std::cout << MU_0;
     return EXIT_SUCCESS;
 }
