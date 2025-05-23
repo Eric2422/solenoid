@@ -17,11 +17,11 @@ double calculateWireLength(double length, double radius, double turns) {
 
 /**
  * @brief Calculate the approximate effective permeability of a cylinder.
- * 
+ *
  * Calculates the demagnetizing factor of a cylinder using a formula from:
  * Journal of Applied Physics 66, 983 (1989); https://doi.org/10.1063/1.343481
  * A copy is included [here](ref/sato_demagnetizing_factors.pdf)
- * 
+ *
  * @param radius The radius of the cylinder in meters(m)
  * @param length The length of the cylinder in meters(m)
  * @param relativePermeability The relative permeability of the cylinder's material in N * A^-2
@@ -39,14 +39,15 @@ double calculateCylinderEffectivePermeability(double radius, double length, doub
 
 /**
  * @brief Calculate the magnetic field produced by a solenoid
- * 
+ *
  * @param effectivePermeability The effective permeability of the solenoid core in N * A^-2
  * @param turns How many turns of wire are in the solenoid
  * @param length The length of the solenoid in meters(m)
  * @param current The current flowing through the solenoid in Amperes(A)
  * @return The magnitude of the magnetic field produced by the solenoid in Teslas(T)
  */
-double calculateSolenoidMagneticField(double effectivePermeability, double turns, double length, double current) {
+double calculateSolenoidMagneticField(double effectivePermeability, double turns, double length, double current)
+{
     return MU_0 * effectivePermeability * turns / length * current;
 }
 
@@ -63,15 +64,15 @@ int main()
     double turns;
     std::cout << "Number of turns:";
     std::cin >> turns;
-    
+
     double wireResisitivity;
     std::cout << "Wire resistivity (ohms / m):";
     std::cin >> turns;
-    
+
     double wireDiameter;
     std::cout << ":";
     std::cin >> turns;
-    
+
     std::cout << MU_0;
     return EXIT_SUCCESS;
 }
