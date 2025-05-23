@@ -4,11 +4,16 @@
 
 #include "sci_constants.h"
 
+double calculateWireLength(double length, double radius, double turns, int )
+
+
 double calculateWireLength(double length, double radius, double turns) {
     double length = 0;
 
-    
+    //
+    for (int i =0; i < turns * )
 }
+
 
 /**
  * @brief Calculate the approximate effective permeability of a cylinder.
