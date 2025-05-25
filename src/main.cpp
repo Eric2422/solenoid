@@ -1,6 +1,9 @@
-#include <cstdlib>
-#include <iostream>
+
 #include <cmath>
+#include <cstdlib>
+#include <fstream>
+#include <iostream>
+#include <json/value.h>
 
 #include "sci_constants.h"
 
@@ -107,25 +110,10 @@ double calculateSolenoidMagneticField(double effectivePermeability, double numTu
 
 int main()
 {
-    // double length;
-    // std::cout << "Length of solenoid(m):";
-    // std::cin >> length;
-
-    // double radius;
-    // std::cout << "Radius of solenoid(m):";
-    // std::cin >> radius;
-
-    // double turns;
-    // std::cout << "Number of turns:";
-    // std::cin >> turns;
-
-    // double wireResisitivity;
-    // std::cout << "Wire resistivity (ohms / m):";
-    // std::cin >> wireResisitivity;
-
-    // double wireDiameter;
     // std::cout << "Wire diameter:";
     // std::cin >> wireDiameter;
+    
+
 
     return EXIT_SUCCESS;
 }
