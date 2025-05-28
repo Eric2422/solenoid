@@ -3,7 +3,8 @@
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
-#include <nlohmann/json.hpp>
+
+#include "json.hpp"
 
 #include "sci_constants.h"
 
