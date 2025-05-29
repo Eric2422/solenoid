@@ -111,9 +111,10 @@ double calculateSolenoidMagneticField(double effectivePermeability, double numTu
 
 int main()
 {
-    // std::cout << "Wire diameter:";
-    // std::cin >> wireDiameter;
-    
+    std::ifstream file = std::ifstream("./input/solenoid.json");
+    json data = json::parse(file);
+    file.close();
+
     
 
     return EXIT_SUCCESS;
