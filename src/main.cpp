@@ -115,7 +115,9 @@ int main()
     json data = json::parse(file);
     file.close();
 
-    
+    double coilLength = data["coilLength"]
+
+    std::cout << coilLength;
 
     return EXIT_SUCCESS;
 }
