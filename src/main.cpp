@@ -139,7 +139,7 @@ int main()
 
     double magneticField = calculateSolenoidMagneticField(effectivePermeability, data["numTurns"], data["coilLength"], current);
 
-    std::cout << "B = " << magneticField << " T * A^-2" << std::endl;
+    std::cout << "B = " << magneticField << " T" << std::endl;
 
     return EXIT_SUCCESS;
 }
