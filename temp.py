@@ -4,9 +4,9 @@ import scipy
 import scipy.constants
 import scipy.integrate
 
-coilLength = 0.0762
-coilRadius = 0.1
-numTurns = 30
+coilLength = 7.62e-2
+coilRadius = 0.15875e-2
+numTurns = 56
 
 def f(x):
     omega = 2 * scipy.constants.pi * numTurns / coilLength;

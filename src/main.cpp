@@ -37,7 +37,7 @@ double calculateWireLength(double coilLength, double coilRadius, double numTurns
         length += sqrt(pow(dx, 2) + pow(dy, 2) + pow(dz, 2));
     }
 
-    return 2 * length;
+    return length;
 }
 
 /**
@@ -133,9 +133,15 @@ int main(int argc, char *argv[])
 
     double effectivePermeability = calculateCylinderEffectivePermeability(data["coilRadius"], data["coilLength"], data["relativePermeability"]);
 
+    std::cout << "Effective permeability = " << effectivePermeability << " N * A^-2" << std::endl;
+
     double wireLength = calculateWireLength(data["coilLength"], data["coilRadius"], data["numTurns"]);
     double wireResistance = calculateWireResistance(wireLength, data["wireDiameter"], data["wireResistivity"]);
     double current = data["voltage"].get<double>() / wireResistance;
+
+    std::cout << "Wire length = " << wireLength << " m" << std::endl;
+    std::cout << "Wire resistance = " << wireResistance << " Ω" << std::endl;
+    std::cout << "Current = " << current << " A" << std::endl;
 
     double magneticField = calculateSolenoidMagneticField(effectivePermeability, data["numTurns"], data["coilLength"], current);
 
