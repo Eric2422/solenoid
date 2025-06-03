@@ -114,9 +114,9 @@ double calculateSolenoidMagneticField(double effectivePermeability, double numTu
     return MU_0 * effectivePermeability * numTurns / length * current;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-    std::ifstream file = std::ifstream("./input/solenoid.json");
+    std::ifstream file = std::ifstream(argv[1]);
     json data = json::parse(file);
     file.close();
 
