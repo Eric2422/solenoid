@@ -61,9 +61,9 @@ double calculateWireLength(double coilLength, double coilRadius, long numTurns)
 }
 
 /**
- * @brief Calulate the resistance of a cylindrical solenoid
+ * @brief Calculate the resistance of a cylindrical solenoid
  *
- * @param wireLength The length of the wire wrapped aroudn the solenoid in meters(m)
+ * @param wireLength The length of the wire wrapped around the solenoid in meters(m)
  * @param wireDiameter The diameter of the wire in meters(m)
  * @param wireResistivity The resistivity of the wire in ohm-meters(Ω * m)
  * @return The resistance of the wire in ohms(Ω)
@@ -83,7 +83,7 @@ double calculateWireResistance(double wireLength, double wireDiameter, double wi
  *
  * Calculates the demagnetizing factor of a cylinder using a formula from:
  * Journal of Applied Physics 66, 983 (1989); https://doi.org/10.1063/1.343481
- * A copy is included [here](ref/sato_demagnetizing_factors.pdf)
+ * A copy is included [here](./ref/sato_demagnetizing_factors.pdf)
  *
  * @param radius The radius of the cylinder in meters(m)
  * @param length The length of the cylinder in meters(m)
