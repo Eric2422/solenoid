@@ -71,8 +71,8 @@ double calculateWireLength(double coilLength, double coilRadius, long numTurns)
 double calculateWireResistance(double wireLength, double wireDiameter, double wireResistivity)
 {
     // The cross-sectional area of the wire
-    double coilRadius = wireDiameter / 2;
-    double area = PI * pow(coilRadius, 2);
+    double wireRadius = wireDiameter / 2;
+    double area = PI * pow(wireRadius, 2);
 
     // The resistance of the wire
     return wireLength * wireResistivity / area;
@@ -81,9 +81,9 @@ double calculateWireResistance(double wireLength, double wireDiameter, double wi
 /**
  * @brief Calculate the approximate effective permeability of a cylinder.
  *
- * Calculates the demagnetizing factor of a cylinder using a formula from:
+ * Calculates the approximate demagnetizing factor of a cylinder using a formula from:
  * Journal of Applied Physics 66, 983 (1989); https://doi.org/10.1063/1.343481
- * A copy is included [here](./ref/sato_demagnetizing_factors.pdf)
+ * A copy is included at [`ref/sato_demagnetizing_factors.pdf`](ref/sato_demagnetizing_factors.pdf).
  *
  * @param radius The radius of the cylinder in meters(m)
  * @param length The length of the cylinder in meters(m)
