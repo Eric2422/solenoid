@@ -9,6 +9,8 @@ All numbers are in SI units.
 ## Table of Contents
 
 - [Usage](#usage)
+- [Properties of Common Materials](#properties-of-common-materials)
+  - [Resistivity at 20 $\\degree$C](#resistivity-at-20-degreec)
 - [References](#references)
 
 ## Usage
@@ -30,11 +32,21 @@ e.g., [G++](https://gcc.gnu.org/), [Clang](https://clang.llvm.org/), etc.
 Then run the binary file, passing in the path of the desired JSON as a command-line argument.
 Assuming that the binary file is in `bin/`, run `bin/<name of binary file> <path to JSON file>`.
 
+## Properties of Common Materials
+
+For your convenience, here are some properties of common materials.
+
+### Resistivity at 20 $\degree$C
+
+| Material | Resistivity($\Omega$) |
+| -------- | --------------------- |
+| Copper   |                       |
+
 ## References
 
 M. Sato, Y. Ishii. (1989). Simple and approximate expressions of demagnetizing factors of uniformly magnetized rectangular rod and cylinder.
 *Journal of Applied Physics* 66, 983 (1989); <https://doi.org/10.1063/1.343481>.
-A copy of the paper is available at [./ref/sato_demagnetizing_factors.pdf](./ref/sato_demagnetizing_factors.pdf).
+A copy is available at [`./ref/sato_demagnetizing_factors.pdf`](./ref/sato_demagnetizing_factors.pdf).
 
 Screwchart. (2021). *WOOD Magazine*. <https://files.w2oodmagazine.com/wp-content/uploads/pdfs/sites/49/2021/10/26/screwchart.pdf>.
-A copy is available at [./ref/screw_sizes.jpg](./ref/screw_sizes.jpg).
+A copy is available at [`./ref/screw_sizes.jpg`](./ref/screw_sizes.jpg).
