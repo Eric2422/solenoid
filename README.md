@@ -5,6 +5,8 @@ A short C++ program to calculate the magnetic field produced by a solenoid.
 > [!NOTE]
 > The accuracy of this program seems rather questionable.
 
+## Table of Contents
+
 - [Acknowledgements](#acknowledgements)
   - [Demagnetizing Factors](#demagnetizing-factors)
   - [Screw Sizes](#screw-sizes)
