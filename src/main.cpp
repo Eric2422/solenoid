@@ -81,9 +81,7 @@ double calculateWireResistance(double wireLength, double wireDiameter, double wi
 /**
  * @brief Calculate the approximate effective permeability of a cylinder.
  *
- * Calculates the approximate demagnetizing factor of a cylinder using a formula from:
- * Journal of Applied Physics 66, 983 (1989); https://doi.org/10.1063/1.343481
- * A copy is included at [`ref/sato_demagnetizing_factors.pdf`](ref/sato_demagnetizing_factors.pdf).
+ * Calculates the approximate demagnetizing factor of a cylinder[(Sato & Ishii, 1989)](./README.md).
  *
  * @param radius The radius of the cylinder in meters(m)
  * @param length The length of the cylinder in meters(m)
