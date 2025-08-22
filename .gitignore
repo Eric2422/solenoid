@@ -33,6 +33,3 @@
 
 # Environment
 .vscode/
-
-# Compiled files directory
-bin/
