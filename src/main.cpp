@@ -61,9 +61,9 @@ double calculateWireLength(double coilLength, double coilRadius, long numTurns)
 }
 
 /**
- * @brief Calulate the resistance of a cylindrical solenoid
+ * @brief Calculate the resistance of a cylindrical solenoid
  *
- * @param wireLength The length of the wire wrapped aroudn the solenoid in meters(m)
+ * @param wireLength The length of the wire wrapped around the solenoid in meters(m)
  * @param wireDiameter The diameter of the wire in meters(m)
  * @param wireResistivity The resistivity of the wire in ohm-meters(Ω * m)
  * @return The resistance of the wire in ohms(Ω)
@@ -71,8 +71,8 @@ double calculateWireLength(double coilLength, double coilRadius, long numTurns)
 double calculateWireResistance(double wireLength, double wireDiameter, double wireResistivity)
 {
     // The cross-sectional area of the wire
-    double coilRadius = wireDiameter / 2;
-    double area = PI * pow(coilRadius, 2);
+    double wireRadius = wireDiameter / 2;
+    double area = PI * pow(wireRadius, 2);
 
     // The resistance of the wire
     return wireLength * wireResistivity / area;
@@ -81,9 +81,7 @@ double calculateWireResistance(double wireLength, double wireDiameter, double wi
 /**
  * @brief Calculate the approximate effective permeability of a cylinder.
  *
- * Calculates the demagnetizing factor of a cylinder using a formula from:
- * Journal of Applied Physics 66, 983 (1989); https://doi.org/10.1063/1.343481
- * A copy is included [here](ref/sato_demagnetizing_factors.pdf)
+ * Calculates the approximate demagnetizing factor of a cylinder[(Sato & Ishii, 1989)](./README.md).
  *
  * @param radius The radius of the cylinder in meters(m)
  * @param length The length of the cylinder in meters(m)
