@@ -10,7 +10,7 @@ All numbers are in SI units.
 
 - [Usage](#usage)
 - [Properties of Common Materials](#properties-of-common-materials)
-  - [Resistivity at 20 $\\degree$C](#resistivity-at-20-degreec)
+  - [Resistivity at 20 °C](#resistivity-at-20-c)
 - [References](#references)
 
 ## Usage
@@ -36,7 +36,7 @@ Assuming that the binary file is in `bin/`, run `bin/<name of binary file> <path
 
 For your convenience, here are some properties of common materials.
 
-### Resistivity at 20 $\degree$C
+### Resistivity at 20 °C
 
 | Material | Resistivity($\Omega$) |
 | -------- | --------------------- |
