@@ -36,3 +36,5 @@
 
 # Compiled files directory
 bin/
+
+.DS_Store
