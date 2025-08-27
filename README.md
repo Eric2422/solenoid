@@ -36,7 +36,8 @@ Assuming that the binary file is in `bin/`, run `bin/<name of binary file> <path
 
 For your convenience, here are some properties of common materials.
 
-### Resistivity at 20 $\degree$C
+### Resistivity at 20 $`\degree`
+$C
 
 | Material | Resistivity($\Omega$) |
 | -------- | --------------------- |
